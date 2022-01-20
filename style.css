@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    background-color: black;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.navbar{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+.logo{
+    font-size: 33px;
+    margin: 0 12px;
+}
+.btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 12px;
+}
+.btn i{
+    font-size: 33px;
+    color: white;
+}
+.links{
+    /* display: flex;
+    flex-direction: column; */
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+}
+.links li{
+    height: 3rem;
+    padding: 12px 0;
+}
+.links li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    margin: 0 12px;
+}
+.links li:hover{
+    background-color: grey;
+}
+.show-links{
+    height: 7rem;
+}
+.search{
+    display: flex;
+    padding: 12px 12px;
+    background: white;
+    
+}
+.search input{
+    outline: none;
+    padding: 12px 12px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    width: 90%;
+}
+.search button{
+    background-color: rgb(109, 107, 107);
+    border-radius: 5px;
+    padding: 5px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 12px;
+    height: max-content;
+    margin: 12px auto;
+    
+}
+#addtxt{
+    display: block;
+    width: 98%;
+    font-size: 20px;
+    padding: 12px 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+}
+#addbtn{
+    padding: 12px 12px;
+    background-color: rgb(94, 91, 91);
+    margin: 12px 0;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#notes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    
+    grid-gap: 0.7rem;
+    margin: 12px 12px;
+}
+
+.card{
+    height: max-content;
+    /* width: 400px; */
+    border: 2px solid black;
+    padding: 12px 12px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    
+}
+.card p{
+    margin: 12px 0;
+    line-height: 1rem;
+}
+.delbtn{
+    padding: 12px 12px;
+    background-color: rgb(94, 91, 91);
+    margin: 12px 0;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px gray;
+}
+@media only screen and (min-width:750px){
+    header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .links{
+    height: auto;
+    display: flex;
+    list-style: none;
+    }
+    .links li{
+        height: inherit;
+        padding: 21px 0;
+    }
+    .search{
+        background: transparent;
+    
+    }
+    .search input{
+        width: 250px;
+    }
+}

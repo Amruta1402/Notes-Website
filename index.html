@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b3bfe1b001.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My Notes</title>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <div class="logo">MY NOTES</div>
+            <button class="btn nav-toggle" id="togglebtn"><i class="fas fa-bars"></i></button>
+        </nav>
+        
+        <ul class="links" id="links">
+            <li><a href="http://">Home</a></li>
+            <li><a href="http://">Notes</a></li>
+            
+        </ul>
+        
+        <form action="" class="search">
+            
+            <input type="text" id="searchtxt" placeholder="Search Notes">
+            <button class="btn" id="searchbtn"><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+    <div class="container">
+        <h1>Add Notes</h1>
+        <textarea  id="addtxt" rows="5" placeholder="Add Text"></textarea>
+        <button class="btn" id="addbtn">Add Note</button>
+    </div>
+    <hr>
+    <div id="notes">
+        <div class="card">
+            <h2>Note 1</h2>
+            <p></p>
+            <button class="delbtn">Delete Note</button>
+        </div>
+        <div class="card">
+            <h2>Note 1</h2>
+            <p></p>
+            <button class="delbtn">Delete Note</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
